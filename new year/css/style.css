@@ -1,0 +1,92 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+/* font */
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../font/Roboto-Light.woff2') format('woff2'),
+        url('../font/Roboto-Light.woff') format('woff'),
+        url('../font/Roboto-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../font/Roboto-Bold.woff2') format('woff2'),
+        url('../font/Roboto-Bold.woff') format('woff'),
+        url('../font/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../font/Roboto-Regular.woff2') format('woff2'),
+        url('../font/Roboto-Regular.woff') format('woff'),
+        url('../font/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+/* font end */
+
+
+.container{max-width: 1560px;margin: 0 auto;background-color: white;border: 1px solid black;position: relative;display: flex; flex-direction: row;}
+.grid-part{width:750px;  display: grid; grid-template-columns: 375px 375px;
+border: 1px solid black;height: 92%; margin: 35px;}
+.design-item3 { grid-column: 1/3; grid-row: 2/4;}
+img.imgpart {
+    width: 100%;position: relative;height: 100%;
+}
+.color {
+    font-size: 68px;
+    border: 2px solid black;
+    text-align: center;font-weight: 600;}
+ img.logopart {
+        width: 8%;
+        top: 60px;
+        position: absolute;} 
+ h1.heading1 {font-family: 'Roboto-Bold';
+        position: absolute;
+        top: 149px;
+        font-size: 100px;width: 37%;} 
+h2.date {font-family: 'Roboto-Light';
+        padding: 7px 73px;
+        position: absolute;
+        top: 396px;
+        font-size: 32px;
+        color: white;
+        background-color: black;}
+ p.text {font-family: 'Roboto-Regular';
+            position: absolute;
+            top: 470px;
+            width: 32%;
+            font-size: 24px;}
+ .web-link {font-family: 'Roboto-Regular';
+        position: absolute;
+        top: 658px;
+        font-size: 26px;}
+ span.visit {
+        display: block;}
+.icon{width: 17%;}
+.icon3 {
+        position: absolute;
+        top: 675px;
+        right: 0px;}
+img.logo2 {
+            width: 4.5%;
+            position: absolute;
+            top: 69px;
+            right: 78px;} 
+img.subtitle {
+            position: absolute;
+            width: 7%;
+            right: 59px;
+            top: 51px;}
+ img.star {top: 453px;position: absolute;right: 0;width: 3%;}
+ /* @media screen and(max-width:1200px) {
+    .grid-part{width: 50%;}
+    .imgpart{width: 50%;}
+    .container{width: 100%;}
+ } */

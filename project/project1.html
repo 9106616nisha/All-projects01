@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <script src="https://kit.fontawesome.com/6a83da7c90.js" crossorigine="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header-part">
+            <div class="logo-part">
+                <img src="image/logo2.png" alt="2" class="logo">
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-items">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-items">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-items">
+                        <a href="#" class="nav-link">Collection</a>
+                    </li>
+                    <li class="nav-items">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+
+            <div class="search-part">
+                <img src="image/menu.png" alt="2" id="menu">
+                <div class="dropdowm">
+                    <div class="dropbox">
+                        <ul class="droplist">
+                            <li class="dropitems">MEN</li>
+                            <li class="dropitems">WOMEN</li>
+                            <li class="dropitems">CHILDREN</li>
+                            <li class="dropitems">KID</li>
+
+                        </ul>
+                    </div>
+                </div>
+                </i>
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <form>
+                    <input type="text" class="search" placeholder="search">
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- slick -->
+    <section class="banner">
+        <div class="slider">
+            <div>
+                <div>
+                    <img src="image/banner.jpg" alt="2" class="sliderimg">
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <img src="image/img3.jpg" alt="2" class="sliderimg">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="image/img4.jpg" alt="2" class="sliderimg">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="image/footer.jpg" alt="2" class="sliderimg">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- slick end -->
+    <div class="combine">
+        <div class="hoverlayer">
+            <div class="box">
+                <img src="image/2img.jpeg" alt="2" class="box-img">
+                <div class="boxcontent">
+                    <h2 class="heading">My First Picnic</h2>
+                    <p class="text">This is my first Tracking Trip.I enjoy this Adventure.In This Trip i with my three
+                        Friends.We all Love Tracking So we fully Enjoy. </p>
+                </div>
+            </div>
+        </div>
+        <div class="anmtn-imge">
+            <img src="image/imge8.webp" alt="2" class="image8">
+        </div>
+    </div>
+    <div class="memory">
+        <div class="memorypic">
+            <div class="img">
+                <img src="image/3img.jpeg" alt="2" class="photo">
+            </div>
+            <span class="icon-set">
+                <img src="image/icon02.png" alt="2" class="icon">
+                <img src="image/icon03.png" alt="2" class="icon">
+            </span>
+
+        </div>
+    </div>
+    <div class="socialmedia">
+        <img src="image/social2.jpeg" alt="2" class="social-img">
+        <div class="social-icon">
+            <img src="image/Facebook.png" alt="2">
+            <img src="image/Instagram.png" alt="2">
+            <img src="image/Twitter.png" alt="2">
+            <img src="image/WhatsApp.png" alt="2">
+        </div>
+    </div>
+    <div class="date">
+        <h2>Current Date and Time</h2>
+        <div id="date-time">
+        </div>
+    </div>
+    <!-- marquee -->
+    <marquee behavior="slidind"><img src="image/icon05.png" alt="2" class="contac"><img src="image/icon6.png" alt="2"
+            class="contac"><img src="image/icon7.png" alt="2" class="contac"></marquee>
+
+
+    <div class="tital">
+        <h1 class="heading1">
+            MY NAME IS NISHA
+        </h1>
+    </div>
+    <script>
+        let a;
+        //let time;
+        let date;
+        setInterval(() => {
+            a = new Date();
+            date = a.toLocaleString();
+            document.getElementById('date-time').innerHTML = date;
+        }, 1000);
+    </script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script>
+        $('.slider').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        });
+
+    </script>
+
+</body>
+
+</html>

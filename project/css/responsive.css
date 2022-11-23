@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&display=swap');
+
+/* @font-face {
+    font-family: 'Alumni Sans Collegiate One', sans-serif;
+    src: url('../fonts/AlumniSansCollegiateOne-Italic.ttf') 
+}; */
+
+
+.box {
+    /* background: red; */
+    height: 20px;
+    font-family: 'Alumni Sans Collegiate One', sans-serif;
+}
+
+body {
+    font-family: 'Alumni Sans Collegiate One', sans-serif;
+    font-weight: 600;
+
+}
+
+@media screen and (max-width:480px) {
+    div {
+        background: blue;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    .div {
+        background: green;
+    }
+}

@@ -1,0 +1,234 @@
+*{margin: 0;padding: 0;box-sizing: border-box;
+}
+.margin{
+    margin: 0 30px;
+}
+.header-part {
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: large;
+    
+}
+img.logo {
+    width: 100px;
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 38px;
+}
+.search{
+    width: 100px;
+    margin-right: 20px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.search-part{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+#menu{
+    width: 4%;
+    height: auto;
+}
+.dropdown{
+    position: relative;
+}
+.dropbox{
+    position: absolute;
+    display: none;
+    width: 200px;
+    background-color: brown;
+}
+.dropdown:hover .dropbox {
+    display: block;
+}
+.dropdown .dropitems{
+    display: block;
+}
+
+ul.droplist{
+    list-style-type: none;
+    
+}
+.fa-solid{
+    margin: 10px;
+}
+li.nav-items {
+    display: inline-block;
+}
+a.nav-link {
+        text-decoration: none;
+        padding: 15px;}
+.nav-list{list-style-type: none;
+    margin-right: 245px;
+    display: flex;}
+ /* sliderimg */
+ .sliderimg{
+    width: 100%;
+    display: block;
+   }
+   .banner{
+    overflow: hidden;
+   }
+   /* section-2 */
+.box-img{
+    width:100%;
+    height: auto;
+    transition: .9s;
+}
+.boxcontent{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    left: 0;
+    top: 0;
+    margin-top: 126px;
+    color: rgb(107, 33, 211);
+}
+.box{
+    position: relative;
+    width: 503px;
+    height: 375px;
+    margin-bottom: 40px;
+}
+.box::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height:100%;
+    top: 0;
+    left: 0;
+    background-color: bisque ;
+    opacity: .7;
+    border: 2px solid brown;
+}
+.heading{
+    position: relative;
+}
+.heading::before {
+    content: " ";
+    position: absolute;
+    left: -35px;
+    bottom: -5px;
+    width: 136%;
+    height: 2px;
+    background-color:rgb(107, 33, 211) ;
+}
+.text{
+    width: 80%;
+    font-size: large;
+    margin-top:10px;
+    /* color: blue; */
+}
+.box:hover .box-img{background-color: blue;
+    transform:rotate(720deg)scale(0);-------------
+    opacity: 0;
+}
+.hoverlayer{display: inline-block;margin: 20px;}
+.image8 {
+    animation: image 2s linear infinite alternate-reverse both;
+}
+.anmtn-imge{ display: inline;}
+@keyframes image{
+    0%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+.image8{
+    width: 50%;
+    display: inline;margin-top: 30px;
+}
+.memory{
+    width: 100%;
+    margin-bottom: 30px;position: relative;
+}
+.memorypic .img{width: 100%;height: 100%;overflow: hidden; }
+.icon{
+    width: 3%;
+    transition: .5s;
+    margin: 5px;
+}
+.icon:hover{
+    transform:scale(1.5);
+}
+.photo{
+    width: 40%;
+    transition: .5s;
+    border: 1px solid gray;overflow: auto;display:block;
+}
+.photo:hover{
+    transform:scale(1.1);
+}
+.icon-set{
+    position: absolute;
+    top: 0px;
+    margin: 20px;
+    margin-right: 160px;
+}
+.contac{
+    width: 5%;
+}
+.social-img{
+    width: 100%;
+}
+.socialmedia{    display: inline-block;
+    width: 500px;
+    height:303px;
+    position: relative;
+    border: 3px dashed #003eff;
+    margin-bottom: 20px;
+}
+.social-icon{
+    background-color: crimson;
+    position: absolute;
+    top: 131px;
+    left: 156px;
+    padding: 5px;
+    transition: .5s;
+    opacity: .2;
+}
+.socialmedia:hover .social-icon { opacity: 1;
+    background-color: rgb(13, 110, 127);
+    transform:translatey(25px);
+}
+#date-time{text-align: center;font-size: 30px;text-decoration:underline;color: blue;}
+.date{float: right;
+    width: 500px;
+    height: 250px;
+background-color: plum;margin-bottom: 30px;}
+.tital{ margin: 30px;}
+h1.heading1{margin: 0 auto;    text-decoration: underline;
+    width: 400px;
+    font-size: 50px;
+    text-align: center;color: darkcyan;
+    animation: text linear 2s infinite;
+    transition: .5s;
+}
+@keyframes text{
+    0%{transform: scale(1.2);}
+    50%{transform: scale(1);}
+    100%{transform: scale(1.2);}
+}
+h2{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width:850px){
+    .slider{width: 100%;
+        display : block;}
+    }
+    .banner{width: 100%;}
+    
+
+    
